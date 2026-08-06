@@ -2,12 +2,13 @@ services:
   - type: web
     name: jarvis-backend
     env: docker
-    repo: <YOUR_REPO_URL>
+    root: .
+    repo: https://github.com/ScriptsHub07/app_backend.git
     branch: main
     dockerfilePath: Dockerfile
     plan: starter
 
 databases:
   - name: jarvis-db
-    plan: starter
-    postgresVersion: "15"
+    plan: free
+    postgresVersion: "18"
