@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: jarvis-backend
+    env: docker
+    repo: <YOUR_REPO_URL>
+    branch: main
+    dockerfilePath: Dockerfile
+    plan: starter
+
+databases:
+  - name: jarvis-db
+    plan: starter
+    postgresVersion: "15"
